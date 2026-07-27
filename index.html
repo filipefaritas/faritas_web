@@ -1,76 +1,95 @@
 <!DOCTYPE html>
 <html lang="pt-PT">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Faritas — Inteligência para decisões melhores</title>
-<meta name="description" content="A Faritas cria ferramentas inteligentes para ajudar pessoas e empresas a decidir melhor.">
-<link rel="icon" href="favicon.svg" type="image/svg+xml">
-<link rel="stylesheet" href="estilos.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Faritas — Inteligência para decisões melhores</title>
+  <meta name="description" content="A Faritas cria ferramentas inteligentes para ajudar pessoas e empresas a decidir melhor.">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="nav">
-  <a href="#top"><img src="logo.svg" alt="Faritas" class="logo"></a>
-  <nav><a href="#produto">Produto</a><a href="#precos">Preços</a><a class="btn small" href="#acesso">Acesso antecipado</a></nav>
-</header>
-<main id="top">
-<section class="hero">
-  <div>
-    <span class="eyebrow">Ferramentas inteligentes para decisões importantes</span>
-    <h1>Decida melhor.<br><em>Mais depressa.</em></h1>
-    <p>A Faritas transforma perguntas complexas em estimativas úteis, recomendações claras e próximos passos concretos.</p>
-    <div class="actions"><a class="btn" href="#simulador">Experimentar o MVP</a><a class="ghost" href="#acesso">Quero acesso</a></div>
-  </div>
-  <div class="card" id="simulador">
-    <h2>Quanto Custa? <small>by Faritas</small></h2>
-    <form id="estimateForm">
-      <label>O que pretende estimar?
-        <select id="category"><option value="casa">Construção de uma casa</option><option value="empresa">Lançamento de um negócio</option><option value="carro">Compra de um automóvel</option><option value="mudanca">Mudança para outro país</option></select>
-      </label>
-      <label>Orçamento disponível
-        <input id="budget" type="number" min="0" step="100" placeholder="Ex.: 150000" required>
-      </label>
-      <label>País
-        <select id="country"><option value="PT">Portugal</option><option value="AO">Angola</option><option value="BR">Brasil</option></select>
-      </label>
-      <button class="btn full" type="submit">Gerar estimativa</button>
-    </form>
-    <div id="result" class="result hidden"></div>
-  </div>
-</section>
-
-<section id="produto" class="section">
-  <span class="eyebrow">Produto</span>
-  <h2>Uma plataforma. Várias decisões resolvidas.</h2>
-  <div class="grid">
-    <article><b>€</b><h3>Estimativas inteligentes</h3><p>Custos, intervalos, cenários e fatores de risco apresentados de forma simples.</p></article>
-    <article><b>✓</b><h3>Próximos passos</h3><p>Informação dispersa transformada num plano claro, priorizado e acionável.</p></article>
-    <article><b>AI</b><h3>Relatórios personalizados</h3><p>Documentos adaptados ao objetivo, país, orçamento e perfil do utilizador.</p></article>
-  </div>
-</section>
-
-<section id="precos" class="section dark">
-  <span class="eyebrow">Preços de lançamento</span>
-  <h2>Comece gratuitamente. Pague apenas quando precisar de mais.</h2>
-  <div class="grid pricing">
-    <article><span>Grátis</span><h3>€0</h3><p>Estimativas rápidas e acesso às funcionalidades essenciais.</p></article>
-    <article class="featured"><span>Relatório Pro</span><h3>€19</h3><p>Análise personalizada, cenários, riscos e plano de ação em PDF.</p></article>
-    <article><span>Empresas</span><h3>Sob consulta</h3><p>Automação, relatórios, integrações e soluções à medida.</p></article>
-  </div>
-</section>
-
-<section id="acesso" class="cta">
-  <div><span class="eyebrow">Acesso antecipado</span><h2>Seja um dos primeiros a experimentar a Faritas.</h2><p>Deixe o seu contacto para receber novidades e acesso à primeira versão.</p></div>
-  <form id="leadForm">
-    <input id="name" type="text" placeholder="Nome" required>
-    <input id="email" type="email" placeholder="E-mail" required>
-    <select id="interest"><option value="pessoal">Uso pessoal</option><option value="empresa">Empresa</option><option value="parceria">Parceria</option></select>
-    <button class="btn full" type="submit">Quero acesso</button>
-    <small id="leadMessage"></small>
-  </form>
-</section>
-</main>
-<footer><img src="logo.svg" alt="Faritas"><span>© 2026 Faritas</span><div><a href="privacidade.html">Privacidade</a> · <a href="termos.html">Termos</a></div></footer>
-<script src="app.js"></script>
+  <header class="site-header">
+    <a href="#inicio" class="brand"><img src="logo.svg" alt="Faritas"></a>
+    <nav class="main-nav">
+      <a href="#produto">Produto</a>
+      <a href="#como-funciona">Como funciona</a>
+      <a href="#precos">Preços</a>
+      <a href="#acesso" class="button button-small">Acesso antecipado</a>
+    </nav>
+  </header>
+  <main id="inicio">
+    <section class="hero">
+      <div class="hero-copy">
+        <span class="eyebrow">Ferramentas inteligentes para decisões importantes</span>
+        <h1>Decida melhor.<span>Mais depressa.</span></h1>
+        <p>A Faritas transforma perguntas complexas em estimativas úteis, recomendações claras e próximos passos concretos.</p>
+        <div class="hero-actions">
+          <a href="#simulador" class="button">Experimentar o MVP</a>
+          <a href="#acesso" class="button button-secondary">Quero acesso</a>
+        </div>
+      </div>
+      <div class="simulator-card" id="simulador">
+        <div class="card-heading"><strong>Quanto Custa?</strong><small>by Faritas</small></div>
+        <form id="estimateForm">
+          <label for="category">O que pretende estimar?</label>
+          <select id="category">
+            <option value="casa">Construção de uma casa</option>
+            <option value="empresa">Lançamento de um negócio</option>
+            <option value="carro">Compra de um automóvel</option>
+            <option value="mudanca">Mudança para outro país</option>
+          </select>
+          <label for="budget">Orçamento disponível</label>
+          <input id="budget" type="number" min="0" step="100" placeholder="Ex.: 150000" required>
+          <label for="country">País</label>
+          <select id="country"><option value="PT">Portugal</option><option value="AO">Angola</option><option value="BR">Brasil</option></select>
+          <button type="submit" class="button button-full">Gerar estimativa</button>
+        </form>
+        <div id="result" class="result hidden"></div>
+      </div>
+    </section>
+    <section class="section" id="produto">
+      <span class="eyebrow">Produto</span>
+      <h2>Uma plataforma. Várias decisões resolvidas.</h2>
+      <div class="feature-grid">
+        <article><div class="feature-icon">€</div><h3>Estimativas inteligentes</h3><p>Custos, intervalos, cenários e riscos apresentados de forma simples.</p></article>
+        <article><div class="feature-icon">✓</div><h3>Próximos passos</h3><p>Informação dispersa transformada num plano claro e acionável.</p></article>
+        <article><div class="feature-icon">AI</div><h3>Relatórios personalizados</h3><p>Documentos adaptados ao objetivo, país, orçamento e perfil.</p></article>
+      </div>
+    </section>
+    <section class="section section-dark" id="como-funciona">
+      <span class="eyebrow">Como funciona</span>
+      <h2>Da pergunta à decisão em três passos.</h2>
+      <div class="steps-grid">
+        <article><span>01</span><h3>Explique o objetivo</h3><p>Diga-nos o que pretende fazer e quais são as limitações.</p></article>
+        <article><span>02</span><h3>Receba uma análise</h3><p>A Faritas organiza custos, opções e riscos.</p></article>
+        <article><span>03</span><h3>Avance com clareza</h3><p>Receba uma recomendação e os próximos passos.</p></article>
+      </div>
+    </section>
+    <section class="section" id="precos">
+      <span class="eyebrow">Preços de lançamento</span>
+      <h2>Comece gratuitamente. Pague apenas quando precisar de mais.</h2>
+      <div class="pricing-grid">
+        <article><span>Grátis</span><h3>€0</h3><p>Estimativas rápidas e funcionalidades essenciais.</p></article>
+        <article class="featured"><span>Relatório Pro</span><h3>€19</h3><p>Análise personalizada, riscos e plano de ação em PDF.</p></article>
+        <article><span>Empresas</span><h3>Sob consulta</h3><p>Automação, relatórios e integrações à medida.</p></article>
+      </div>
+    </section>
+    <section class="access-section" id="acesso">
+      <div><span class="eyebrow">Acesso antecipado</span><h2>Seja um dos primeiros a experimentar a Faritas.</h2><p>Deixe o seu contacto para receber novidades e acesso à primeira versão.</p></div>
+      <form id="leadForm" class="lead-form">
+        <input id="name" type="text" placeholder="Nome" required>
+        <input id="email" type="email" placeholder="E-mail" required>
+        <select id="interest"><option value="pessoal">Uso pessoal</option><option value="empresa">Empresa</option><option value="parceria">Parceria</option></select>
+        <button type="submit" class="button button-full">Quero acesso</button>
+        <small id="leadMessage"></small>
+      </form>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <img src="logo.svg" alt="Faritas"><span>© 2026 Faritas</span>
+    <div><a href="privacidade.html">Privacidade</a><a href="termos.html">Termos</a></div>
+  </footer>
+  <script src="app.js"></script>
 </body>
 </html>
