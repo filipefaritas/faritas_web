@@ -404,7 +404,6 @@
       </div>
 
       <form
-        id="leadForm"
         class="lead-form"
         action="https://formspree.io/f/mkodawvv"
         method="POST"
@@ -417,12 +416,12 @@
           value="Novo pedido de acesso através do site Faritas"
         >
 
-        <label for="name">
+        <label for="contact-name">
           Nome
         </label>
 
         <input
-          id="name"
+          id="contact-name"
           name="nome"
           type="text"
           placeholder="Nome"
@@ -430,12 +429,12 @@
           required
         >
 
-        <label for="email">
+        <label for="contact-email">
           E-mail
         </label>
 
         <input
-          id="email"
+          id="contact-email"
           name="email"
           type="email"
           placeholder="E-mail"
@@ -443,24 +442,24 @@
           required
         >
 
-        <label for="company">
+        <label for="contact-company">
           Empresa
         </label>
 
         <input
-          id="company"
+          id="contact-company"
           name="empresa"
           type="text"
           placeholder="Nome da empresa"
           autocomplete="organization"
         >
 
-        <label for="interest">
+        <label for="contact-interest">
           Tipo de interesse
         </label>
 
         <select
-          id="interest"
+          id="contact-interest"
           name="interesse"
           required
         >
@@ -477,16 +476,17 @@
           </option>
         </select>
 
-        <label for="message">
+        <label for="contact-message">
           Mensagem
         </label>
 
         <textarea
-          id="message"
+          id="contact-message"
           name="mensagem"
           rows="5"
           placeholder="Explique brevemente o que procura"
         ></textarea>
+
         <button
           type="submit"
           class="button button-full"
@@ -512,6 +512,7 @@
     </span>
 
     <div>
+
       <a href="privacidade.html">
         Privacidade
       </a>
@@ -519,6 +520,7 @@
       <a href="termos.html">
         Termos
       </a>
+
     </div>
 
   </footer>
