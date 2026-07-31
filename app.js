@@ -1,3 +1,33 @@
-const euroFormatter=new Intl.NumberFormat("pt-PT",{style:"currency",currency:"EUR",maximumFractionDigits:0});
-document.getElementById("estimateForm").addEventListener("submit",(event)=>{event.preventDefault();const budget=Number(document.getElementById("budget").value||0);const category=document.getElementById("category").value;const country=document.getElementById("country").value;const factors={casa:[.9,1.22],empresa:[.65,1.45],carro:[.92,1.08],mudanca:[.75,1.3]};const labels={casa:"Construção de uma casa",empresa:"Lançamento de um negócio",carro:"Compra de um automóvel",mudanca:"Mudança para outro país"};const countryFactor=country==="AO"?1.15:country==="BR"?.88:1;const[minFactor,maxFactor]=factors[category];const result=document.getElementById("result");result.innerHTML=`<strong>${labels[category]}</strong><p>Intervalo indicativo: <b>${euroFormatter.format(budget*minFactor*countryFactor)}</b> a <b>${euroFormatter.format(budget*maxFactor*countryFactor)}</b>.</p><small>Estimativa preliminar para demonstração do MVP.</small>`;result.classList.remove("hidden")});
-document.getElementById("leadForm").addEventListener("submit",(event)=>{event.preventDefault();const lead={name:document.getElementById("name").value.trim(),email:document.getElementById("email").value.trim(),interest:document.getElementById("interest").value,createdAt:new Date().toISOString()};const leads=JSON.parse(localStorage.getItem("faritas_leads")||"[]");leads.push(lead);localStorage.setItem("faritas_leads",JSON.stringify(leads));document.getElementById("leadMessage").textContent="Obrigado. O seu pedido ficou registado neste dispositivo.";event.target.reset()});
+(() => {
+  "use strict";
+
+  const menuButton = document.querySelector(".menu-toggle");
+  const navigation = document.querySelector(".main-nav");
+  const year = document.querySelector("#current-year");
+
+  if (year) {
+    year.textContent = String(new Date().getFullYear());
+  }
+
+  if (menuButton && navigation) {
+    const closeMenu = () => {
+      navigation.classList.remove("is-open");
+      menuButton.setAttribute("aria-expanded", "false");
+    };
+
+    menuButton.addEventListener("click", () => {
+      const isOpen = navigation.classList.toggle("is-open");
+      menuButton.setAttribute("aria-expanded", String(isOpen));
+    });
+
+    navigation.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeMenu();
+      }
+    });
+  }
+})();

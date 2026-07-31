@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="560" height="140" viewBox="0 0 560 140"><defs><linearGradient id="g" x1="0" x2="1"><stop stop-color="#55e6b4"/><stop offset="1" stop-color="#5a8cff"/></linearGradient></defs><rect width="140" height="140" rx="32" fill="#0b1728"/><path d="M35 34h70v18H55v18h42v18H55v34H35z" fill="url(#g)"/><text x="165" y="92" font-family="Arial,Helvetica,sans-serif" font-size="70" font-weight="700" fill="#fff">Faritas</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 420 96" role="img" aria-labelledby="title">
+  <title id="title">Faritas Portugal</title>
+  <g fill="none" fill-rule="evenodd">
+    <rect x="2" y="2" width="84" height="84" rx="22" stroke="#C9A765" stroke-width="4"/>
+    <path d="M28 68V28h34M28 47h26" stroke="#C9A765" stroke-width="8" stroke-linecap="round"/>
+    <text x="106" y="50" fill="#FFFFFF" font-family="Georgia, 'Times New Roman', serif" font-size="43" letter-spacing="1">Faritas</text>
+    <text x="108" y="74" fill="#D9BB7C" font-family="Arial, sans-serif" font-size="13" font-weight="700" letter-spacing="5">PORTUGAL</text>
+  </g>
+</svg>
