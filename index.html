@@ -72,67 +72,42 @@
 </header>
 <main id="conteudo">
 <section class="hero">
-<div aria-hidden="true" class="hero-photo"></div>
-<div class="hero-glow hero-glow-one"></div>
-<div class="hero-glow hero-glow-two"></div>
-<div class="container hero-grid">
-<div class="hero-copy">
-<span class="eyebrow">Investment · Relocation · Private Concierge</span>
-<h1>
-            Portugal começa com
-            <span>o parceiro certo.</span>
-</h1>
-<p class="hero-lead">
-            Apoiamos investidores, empresários, executivos, atletas e famílias
-            internacionais a entrar, investir e instalar-se em Portugal com
-            clareza, discrição e um único interlocutor.
-          </p>
-<div class="hero-actions">
-<a class="button" href="#contacto">Marcar conversa confidencial</a>
-<a class="button button-whatsapp" href="https://wa.me/351963564541?text=Ol%C3%A1%20Filipe%2C%20gostaria%20de%20falar%20sobre%20um%20projeto%20em%20Portugal." rel="noopener noreferrer" target="_blank">Falar por WhatsApp</a>
-<a class="button button-secondary" href="#servicos">Conhecer os serviços</a>
-</div>
-<div aria-label="Princípios do serviço" class="trust-strip">
-<span>Coordenação independente</span>
-<span>Rede de parceiros habilitados</span>
-<span>Confidencialidade</span>
-</div>
-</div>
-<aside aria-label="Visão geral do serviço" class="hero-panel">
-<div class="panel-topline">
-<span>PRIVATE CLIENT DESK</span>
-<span>PORTUGAL</span>
-</div>
-<div class="panel-map">
-<div class="map-orbit orbit-one"></div>
-<div class="map-orbit orbit-two"></div>
-<div class="map-pin pin-lisbon"><span>Lisboa</span></div>
-<div class="map-pin pin-porto"><span>Porto</span></div>
-<div class="map-pin pin-algarve"><span>Algarve</span></div>
-<div aria-hidden="true" class="portugal-shape"></div>
-</div>
-<div class="panel-services">
-<div>
-<small>01</small>
-<strong>Investir</strong>
-<span>Analisar e executar</span>
-</div>
-<div>
-<small>02</small>
-<strong>Instalar</strong>
-<span>Relocation completa</span>
-</div>
-<div>
-<small>03</small>
-<strong>Acompanhar</strong>
-<span>Concierge contínuo</span>
-</div>
-</div>
-</aside>
-</div>
-<div class="hero-footer container">
-<p>Um único ponto de contacto. Todas as etapas coordenadas.</p>
-</div>
+  <div class="container hero-grid">
+    <div class="hero-copy">
+      <span class="eyebrow">Investment · Relocation · Private Concierge</span>
+      <h1>Portugal começa com <span>o parceiro certo.</span></h1>
+      <p class="hero-lead">
+        Apoiamos investidores, empresários, executivos, atletas e famílias
+        internacionais a entrar, investir e instalar-se em Portugal com
+        clareza, discrição e um único interlocutor.
+      </p>
+
+      <div class="hero-actions">
+        <a class="button" href="#contacto">Marcar conversa</a>
+        <a class="button button-whatsapp" href="https://wa.me/351963564541?text=Ol%C3%A1%20Filipe%2C%20gostaria%20de%20falar%20sobre%20um%20projeto%20em%20Portugal." rel="noopener noreferrer" target="_blank">WhatsApp</a>
+        <a class="button button-secondary" href="#servicos">Ver serviços</a>
+      </div>
+
+      <div class="trust-strip" aria-label="Princípios do serviço">
+        <span>Coordenação independente</span>
+        <span>Parceiros habilitados</span>
+        <span>Confidencialidade</span>
+      </div>
+    </div>
+
+    <figure class="hero-visual">
+      <picture>
+        <source srcset="lisboa.webp" type="image/webp">
+        <img src="lisboa.jpg" alt="Vista panorâmica de Lisboa e do rio Tejo" width="1800" height="578" fetchpriority="high">
+      </picture>
+      <div class="hero-visual-shade" aria-hidden="true"></div>
+      <span class="hero-visual-badge">Private Client Services</span>
+      <figcaption>
+        <strong>Lisboa, Portugal</strong>
+        <span>Investimento · Relocation · Concierge</span>
+      </figcaption>
+    </figure>
+  </div>
 </section>
 <section class="section section-light" id="servicos">
 <div class="container">
@@ -250,6 +225,31 @@
 </div>
 </div>
 </section>
+<section class="section map-section" id="cobertura">
+<div class="container map-section-grid">
+<div class="section-heading compact">
+<span class="eyebrow dark">Presença local</span>
+<h2>Portugal acompanhado no terreno.</h2>
+<p>
+Apoiamos projetos em todo o país, com especial foco nos principais polos
+de investimento, residência e lifestyle: Porto, Lisboa e Algarve.
+</p>
+<div class="map-highlights">
+<div><strong>Porto</strong><span>Indústria, tecnologia e património.</span></div>
+<div><strong>Lisboa</strong><span>Negócios, ligações internacionais e capital.</span></div>
+<div><strong>Algarve</strong><span>Residência, turismo e lifestyle premium.</span></div>
+</div>
+</div>
+<div class="map-card">
+<div class="map-card-topline">
+<span>Private Client Desk</span>
+<span>Portugal</span>
+</div>
+<img src="mapa-portugal.svg" alt="Mapa de Portugal com marcações no Porto, Lisboa e Algarve" loading="lazy"/>
+</div>
+</div>
+</section>
+
 <section class="section portugal-showcase" id="portugal">
 <div class="container">
 <div class="section-heading">
@@ -332,7 +332,10 @@
 <div class="container founder-grid">
 <div class="founder-media">
 <div class="founder-image-frame">
-<img alt="Filipe Faritas, fundador da Faritas Portugal" loading="lazy" src="filipe-faritas.svg"/>
+<picture>
+<source srcset="filipe-faritas.webp" type="image/webp"/>
+<img alt="Filipe Faritas, fundador da Faritas Portugal" loading="lazy" src="filipe-faritas.jpg" width="1200" height="1500"/>
+</picture>
 </div>
 <div class="founder-links">
 
@@ -393,9 +396,10 @@
             Antes de avançar, receba uma visão independente sobre a melhor forma
             de estruturar o seu projeto em Portugal.
           </p>
-<div class="diagnostic-price">
-<span>A partir de</span>
-<strong>€390</strong>
+<div class="diagnostic-price diagnostic-price-quote">
+<span>Serviço personalizado</span>
+<strong>Sob proposta</strong>
+<p>O âmbito e os honorários são definidos em função do objetivo, da complexidade e do nível de acompanhamento necessário.</p>
 </div>
 </div>
 <div class="diagnostic-card">

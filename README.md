@@ -1,62 +1,24 @@
-# Faritas Portugal — pacote final do website
+# Faritas Portugal — pacote final atualizado
 
-Este pacote contém todos os ficheiros necessários para publicar o website no GitHub e na Vercel.
+Este pacote contém o website completo, pronto para substituir os ficheiros do repositório GitHub e publicar automaticamente na Vercel.
 
 ## Alterações desta versão
 
-- Removidas as ligações profissionais externas que não foram confirmadas.
-- Mantido o nome **Filipe Faritas** na apresentação do fundador.
-- Mantido o botão de WhatsApp para **+351 963 564 541**.
-- Mantidas as imagens de Lisboa, Porto e Algarve.
-- Mantidas as versões portuguesa e inglesa.
-- Mantidos o formulário Formspree, SEO, sitemap, robots e páginas legais.
-- Removido o ficheiro de verificação, que não era necessário para o website.
+- Mapa fiel de Portugal continental, criado a partir da imagem fornecida pelo utilizador.
+- Pontos corretamente posicionados no Porto, Lisboa e Algarve.
+- Fotografia real de Filipe Faritas em JPG e WebP otimizados.
+- Preço numérico removido e substituído por “Sob proposta”.
+- Versões portuguesa e inglesa atualizadas.
+- Formulário Formspree e botão de WhatsApp mantidos.
+- Sem ligações ao LinkedIn.
 
-## Ficheiros que devem ficar no repositório
+## Publicação
 
-- `index.html`
-- `en.html`
-- `styles.css`
-- `app.js`
-- `logo.svg`
-- `favicon.svg`
-- `filipe-faritas.svg`
-- `lisboa.jpg`
-- `lisboa.webp`
-- `porto.jpg`
-- `porto.webp`
-- `algarve.jpg`
-- `algarve.webp`
-- `social-cover.png`
-- `social-cover.svg`
-- `robots.txt`
-- `sitemap.xml`
-- `privacidade.html`
-- `termos.html`
-- `README.md`
+1. Extraia o ZIP.
+2. No GitHub, escolha **Adicionar arquivo → Carregar arquivos**.
+3. Carregue todos os ficheiros extraídos.
+4. Confirme a substituição dos ficheiros existentes.
+5. Faça o commit.
+6. Aguarde o deployment da Vercel e atualize o site com `Ctrl + F5`.
 
-## Como carregar no GitHub
-
-1. Extraia o ZIP no computador.
-2. No repositório `faritas_web`, escolha **Adicionar arquivo → Carregar arquivos**.
-3. Arraste todos os ficheiros desta pasta, sem carregar o próprio ZIP.
-4. Os ficheiros com nomes iguais serão substituídos automaticamente.
-5. Faça o commit com a mensagem `Pacote final Faritas`.
-6. Aguarde a implantação automática da Vercel.
-7. Atualize `https://www.faritas.co` com `Ctrl + F5`.
-
-## Formulário e WhatsApp
-
-- Formspree: `https://formspree.io/f/mkodawvv`
-- WhatsApp: `https://wa.me/351963564541`
-
-## Limpeza do repositório
-
-Depois do upload, elimine apenas ficheiros antigos que não constem da lista acima, por exemplo `.html`, `VERIFICAÇÃO.txt` ou `estilos.css` caso ainda existam com esses nomes reais.
-
-## Nota legal
-
-Os textos de privacidade, termos e enquadramento profissional são uma base inicial. Devem ser revistos por um advogado antes do início da atividade comercial.
-
-
-Atualização: hero image reduzida, fotografia mais compacta e elegante no topo da homepage.
+Não carregue o ficheiro ZIP para dentro do repositório; carregue os ficheiros que estão dentro dele.

@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 700" role="img" aria-labelledby="map-title map-desc">
+  <title id="map-title">Mapa de Portugal</title>
+  <desc id="map-desc">Mapa de Portugal continental com marcações no Porto, Lisboa e Algarve.</desc>
+
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#132a3d"/>
+      <stop offset="1" stop-color="#0a1d2c"/>
+    </linearGradient>
+
+    <linearGradient id="land" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#d1b36f"/>
+      <stop offset="1" stop-color="#8d8056"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feDropShadow dx="0" dy="18" stdDeviation="18" flood-color="#020a10" flood-opacity=".38"/>
+    </filter>
+
+    <filter id="glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="900" height="700" rx="34" fill="url(#background)"/>
+
+  <g opacity=".26" fill="none" stroke="#d4b46a">
+    <circle cx="405" cy="350" r="278"/>
+    <circle cx="405" cy="350" r="208"/>
+    <ellipse cx="405" cy="350" rx="305" ry="142" stroke-dasharray="7 9"/>
+    <ellipse cx="405" cy="350" rx="148" ry="305" stroke-dasharray="7 9"/>
+  </g>
+
+  <path d="M 376.7 88.0 L 368.8 92.5 L 350.8 97.0 L 332.8 115.0 L 329.5 121.7 L 329.5 128.5 L 334.0 136.4 L 336.2 162.2 L 340.7 178.0 L 344.1 182.5 L 345.2 199.3 L 326.1 271.3 L 328.4 282.5 L 312.6 323.0 L 309.2 338.8 L 299.1 353.4 L 287.9 361.2 L 291.2 366.9 L 291.2 373.6 L 285.6 387.1 L 280.0 390.5 L 280.0 423.1 L 298.0 429.8 L 301.4 440.0 L 299.1 453.4 L 314.9 450.1 L 322.7 445.6 L 330.6 450.1 L 329.5 456.8 L 332.8 464.7 L 332.8 478.2 L 330.6 489.4 L 325.0 501.8 L 330.6 508.5 L 330.6 532.2 L 328.4 537.8 L 329.5 556.9 L 323.9 567.0 L 323.9 574.9 L 314.9 595.1 L 319.4 596.3 L 326.1 591.8 L 349.7 587.3 L 359.8 590.6 L 371.1 590.6 L 374.5 592.9 L 387.9 592.9 L 399.2 598.5 L 400.3 601.9 L 413.8 601.9 L 416.1 597.4 L 431.8 586.1 L 444.2 581.6 L 443.0 556.9 L 438.5 547.9 L 438.5 540.0 L 445.3 525.4 L 452.0 519.8 L 456.5 508.5 L 473.4 501.8 L 473.4 496.2 L 476.8 489.4 L 476.8 484.9 L 471.2 486.1 L 465.5 482.7 L 453.2 460.2 L 452.0 451.2 L 455.4 445.6 L 454.3 435.5 L 457.7 427.6 L 471.2 416.3 L 477.9 397.2 L 474.5 392.7 L 465.5 390.5 L 456.5 380.4 L 456.5 373.6 L 450.9 368.0 L 452.0 357.9 L 438.5 345.5 L 437.4 338.8 L 443.0 335.4 L 471.2 335.4 L 475.7 330.9 L 475.7 324.1 L 481.3 315.1 L 484.7 300.5 L 481.3 293.8 L 473.4 288.2 L 472.3 276.9 L 483.5 272.4 L 483.5 267.9 L 488.0 261.2 L 484.7 255.5 L 484.7 247.7 L 486.9 244.3 L 484.7 228.6 L 485.8 213.9 L 480.2 204.9 L 480.2 198.2 L 485.8 194.8 L 490.3 183.6 L 495.9 176.8 L 512.8 169.0 L 518.4 162.2 L 524.0 146.5 L 529.6 143.1 L 518.4 134.1 L 510.5 134.1 L 503.8 129.6 L 504.9 112.7 L 502.6 107.1 L 494.8 107.1 L 488.0 102.6 L 481.3 106.0 L 457.7 102.6 L 456.5 110.5 L 452.0 115.0 L 439.7 119.5 L 434.1 116.1 L 428.4 117.2 L 417.2 112.7 L 405.9 115.0 L 399.2 111.6 L 386.8 120.6 L 377.8 112.7 L 377.8 108.2 L 383.4 100.4 L 384.6 94.7 L 379.0 92.5 Z" fill="url(#land)" stroke="#ead39a" stroke-width="2.4" filter="url(#shadow)"/>
+
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(347.5 187.0)">
+      <circle r="14" fill="#d4b46a" opacity=".22" filter="url(#glow)"/>
+      <circle r="7.5" fill="#071522" stroke="#e5c77e" stroke-width="3"/>
+      <circle r="2.4" fill="#f3ddb0"/>
+      <rect x="20" y="-18" width="95" height="36" rx="18" fill="#071522" fill-opacity=".88" stroke="#ffffff" stroke-opacity=".12"/>
+      <text x="37" y="6" fill="#f5f7f9" font-size="17" font-weight="700">Porto</text>
+    </g>
+
+    <g transform="translate(307.0 428.7)">
+      <circle r="14" fill="#d4b46a" opacity=".22" filter="url(#glow)"/>
+      <circle r="7.5" fill="#071522" stroke="#e5c77e" stroke-width="3"/>
+      <circle r="2.4" fill="#f3ddb0"/>
+      <rect x="20" y="-18" width="105" height="36" rx="18" fill="#071522" fill-opacity=".88" stroke="#ffffff" stroke-opacity=".12"/>
+      <text x="37" y="6" fill="#f5f7f9" font-size="17" font-weight="700">Lisboa</text>
+    </g>
+
+    <g transform="translate(399.2 577.1)">
+      <circle r="14" fill="#d4b46a" opacity=".22" filter="url(#glow)"/>
+      <circle r="7.5" fill="#071522" stroke="#e5c77e" stroke-width="3"/>
+      <circle r="2.4" fill="#f3ddb0"/>
+      <rect x="20" y="-18" width="112" height="36" rx="18" fill="#071522" fill-opacity=".88" stroke="#ffffff" stroke-opacity=".12"/>
+      <text x="37" y="6" fill="#f5f7f9" font-size="17" font-weight="700">Algarve</text>
+    </g>
+  </g>
+</svg>
