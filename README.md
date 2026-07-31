@@ -1,40 +1,56 @@
-# Faritas Portugal — Website
+# Faritas Portugal — Website atualizado
 
 Website estático pronto para GitHub + Vercel.
 
-## Ficheiros principais
+## Atualizações incluídas
 
-- `index.html` — versão portuguesa
-- `en.html` — versão inglesa
-- `styles.css` — design responsivo
-- `app.js` — menu móvel e ano automático
-- `logo.svg` e `favicon.svg`
-- `social-cover.svg` — imagem para partilha social
-- `robots.txt` e `sitemap.xml` — SEO
-- `privacidade.html` e `termos.html`
+- Secção pessoal de **Filipe Faritas**
+- Ligações para LinkedIn e WhatsApp
+- Botão flutuante de WhatsApp: **+351 963 564 541**
+- Galeria premium de Lisboa, Porto e Algarve
+- FAQ comercial
+- Rede de parceiros por especialidade
+- Melhorias de credibilidade, conversão e SEO
+- Versões portuguesa (`index.html`) e inglesa (`en.html`)
+- Formulário Formspree mantido em `https://formspree.io/f/mkodawvv`
 
-## Formulário
+## Nota importante sobre LinkedIn e fotografia
 
-O formulário está ligado ao Formspree:
+O link usado provisoriamente é:
 
-`https://formspree.io/f/mkodawvv`
+`https://www.linkedin.com/in/filipefaritas/`
 
-O JavaScript não bloqueia o envio.
+Confirme que abre o perfil correto. O LinkedIn não disponibilizou publicamente, de forma verificável, a fotografia do perfil durante a preparação deste pacote. Por isso, foi incluída a imagem provisória `filipe-faritas.svg` com as iniciais FF.
 
-## Como publicar
+Para colocar a fotografia real:
 
-1. Faça uma cópia de segurança dos ficheiros atuais.
-2. Substitua os ficheiros do repositório pelos ficheiros desta pasta.
-3. Faça `Commit changes` no GitHub.
-4. Aguarde o novo deployment automático da Vercel.
-5. Teste o formulário e confirme a receção no e-mail associado ao Formspree.
-6. No Google Search Console, submeta:
-   - `https://www.faritas.co/sitemap.xml`
-   - peça indexação de `https://www.faritas.co/`
+1. Descarregue a sua fotografia do LinkedIn ou envie-a diretamente.
+2. Guarde-a como `filipe-faritas.jpg`.
+3. No `index.html` e no `en.html`, substitua:
 
-## Antes do lançamento comercial
+`src="filipe-faritas.svg"`
 
-- Rever os textos legais com advogado.
-- Confirmar a estrutura societária, faturação e tratamento de dados.
-- Validar os parceiros profissionais antes de os apresentar a clientes.
-- Não anunciar mediação imobiliária, aconselhamento financeiro ou serviços jurídicos próprios sem as autorizações aplicáveis.
+por:
+
+`src="filipe-faritas.jpg"`
+
+## Publicação
+
+1. Extraia o ZIP.
+2. Carregue todos os ficheiros para a raiz do repositório GitHub.
+3. Substitua os ficheiros com o mesmo nome.
+4. Faça commit na branch principal.
+5. Aguarde o deployment automático da Vercel.
+6. Teste o formulário, WhatsApp, LinkedIn e versão inglesa.
+
+## Créditos das fotografias
+
+- Lisboa: Mgimelfarb — Wikimedia Commons — CC BY-SA 4.0
+- Porto: Daniel VILLAFRUELA — Wikimedia Commons — CC BY-SA 4.0
+- Algarve: Triops1972 — Wikimedia Commons — CC BY-SA 4.0
+
+Os créditos e a licença também aparecem no rodapé do site.
+
+## Revisão profissional
+
+Antes do lançamento comercial, recomenda-se revisão jurídica dos termos, privacidade, atividade, contratos, comissões e apresentação dos serviços regulados.

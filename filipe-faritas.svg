@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1100" role="img" aria-labelledby="title desc">
+  <title id="title">Filipe Faritas</title>
+  <desc id="desc">Imagem provisória com as iniciais FF. Substituir pela fotografia profissional de Filipe Faritas.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#071522"/>
+      <stop offset="1" stop-color="#17364c"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="72%" cy="18%" r="70%">
+      <stop offset="0" stop-color="#d9bb7c" stop-opacity=".36"/>
+      <stop offset="1" stop-color="#d9bb7c" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="900" height="1100" fill="url(#bg)"/>
+  <rect width="900" height="1100" fill="url(#glow)"/>
+  <g opacity=".12" stroke="#fff">
+    <path d="M0 140h900M0 280h900M0 420h900M0 560h900M0 700h900M0 840h900M0 980h900"/>
+    <path d="M150 0v1100M300 0v1100M450 0v1100M600 0v1100M750 0v1100"/>
+  </g>
+  <circle cx="450" cy="405" r="235" fill="#ffffff" fill-opacity=".06" stroke="#c9a765" stroke-opacity=".45" stroke-width="3"/>
+  <text x="450" y="475" text-anchor="middle" fill="#d9bb7c" font-family="Georgia, serif" font-size="190" letter-spacing="-12">FF</text>
+  <text x="450" y="870" text-anchor="middle" fill="#fff" font-family="Georgia, serif" font-size="58">Filipe Faritas</text>
+  <text x="450" y="930" text-anchor="middle" fill="#d9bb7c" font-family="Arial, sans-serif" font-size="22" font-weight="700" letter-spacing="7">FOUNDER · FARITAS PORTUGAL</text>
+</svg>

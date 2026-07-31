@@ -1195,3 +1195,397 @@ a {
     animation-iteration-count: 1 !important;
   }
 }
+
+
+/* ===== Commercial upgrade: founder, destinations, FAQ and WhatsApp ===== */
+.hero-photo {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  background:
+    linear-gradient(90deg, rgba(4,16,26,.98) 0%, rgba(4,16,26,.88) 46%, rgba(4,16,26,.52) 72%, rgba(4,16,26,.70) 100%),
+    url("lisboa.webp") center right / cover no-repeat;
+  opacity: .78;
+}
+
+.hero-grid,
+.hero-footer,
+.hero-glow {
+  position: relative;
+  z-index: 2;
+}
+
+.button-whatsapp {
+  border-color: #25d366;
+  background: #25d366;
+  color: #04170c;
+}
+
+.button-whatsapp:hover {
+  border-color: #44e27c;
+  background: #44e27c;
+}
+
+.portugal-showcase {
+  background: #ece8df;
+}
+
+.destination-grid {
+  display: grid;
+  grid-template-columns: 1.2fr .8fr;
+  grid-template-rows: repeat(2, minmax(280px, 360px));
+  gap: 18px;
+}
+
+.destination-card {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden;
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow);
+  background: var(--navy-900);
+}
+
+.destination-card-wide {
+  grid-row: 1 / span 2;
+}
+
+.destination-card picture,
+.destination-card img {
+  width: 100%;
+  height: 100%;
+}
+
+.destination-card img {
+  object-fit: cover;
+  transition: transform .7s ease;
+}
+
+.destination-card:hover img {
+  transform: scale(1.035);
+}
+
+.destination-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(4,16,26,.9), rgba(4,16,26,.06) 68%);
+}
+
+.destination-overlay {
+  position: absolute;
+  z-index: 2;
+  inset: auto 28px 26px;
+  color: var(--white);
+}
+
+.destination-overlay > span {
+  color: var(--gold-200);
+  font-size: .72rem;
+  font-weight: 800;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+
+.destination-overlay h3 {
+  margin: 7px 0 4px;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-weight: 400;
+}
+
+.destination-overlay p {
+  max-width: 520px;
+  margin: 0;
+  color: rgba(255,255,255,.68);
+}
+
+.founder-section {
+  background: var(--white);
+}
+
+.founder-grid {
+  display: grid;
+  grid-template-columns: .78fr 1.22fr;
+  gap: 74px;
+  align-items: center;
+}
+
+.founder-image-frame {
+  position: relative;
+  overflow: hidden;
+  border-radius: 28px;
+  box-shadow: var(--shadow);
+  background: var(--navy-900);
+}
+
+.founder-image-frame::after {
+  content: "";
+  position: absolute;
+  inset: 16px;
+  pointer-events: none;
+  border: 1px solid rgba(217,187,124,.38);
+  border-radius: 20px;
+}
+
+.founder-image-frame img {
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  object-fit: cover;
+}
+
+.founder-links {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.social-button {
+  display: inline-flex;
+  min-height: 48px;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--sand-50);
+  font-size: .87rem;
+  font-weight: 800;
+}
+
+.social-button:hover {
+  border-color: var(--gold-500);
+}
+
+.social-button svg {
+  width: 18px;
+  height: 18px;
+  fill: currentColor;
+}
+
+.founder-copy h2 {
+  margin: 0;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(3rem, 6vw, 5.2rem);
+  font-weight: 400;
+  line-height: 1;
+  letter-spacing: -.04em;
+}
+
+.founder-role {
+  margin: 14px 0 26px;
+  color: #8f6f33;
+  font-weight: 800;
+  letter-spacing: .03em;
+}
+
+.founder-copy > p:not(.founder-role) {
+  color: var(--muted);
+  font-size: 1.04rem;
+}
+
+.founder-principles {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.founder-principles > div {
+  padding: 18px;
+  border-top: 2px solid var(--gold-500);
+  background: var(--sand-50);
+}
+
+.founder-principles strong,
+.founder-principles span {
+  display: block;
+}
+
+.founder-principles span {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: .8rem;
+}
+
+.partner-section {
+  padding-top: 0;
+  background: var(--white);
+}
+
+.partner-grid {
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 70px;
+  align-items: center;
+  padding-top: 72px;
+  border-top: 1px solid var(--line);
+}
+
+.partner-categories {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.partner-categories span {
+  padding: 18px 20px;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--sand-50);
+  font-weight: 700;
+}
+
+.diagnostic-whatsapp {
+  display: block;
+  margin-top: 14px;
+  color: var(--gold-200);
+  font-size: .86rem;
+  font-weight: 800;
+  text-align: center;
+}
+
+.faq-grid {
+  display: grid;
+  grid-template-columns: .72fr 1.28fr;
+  gap: 80px;
+  align-items: start;
+}
+
+.faq-list {
+  border-top: 1px solid var(--line);
+}
+
+.faq-list details {
+  border-bottom: 1px solid var(--line);
+}
+
+.faq-list summary {
+  position: relative;
+  padding: 24px 48px 24px 0;
+  cursor: pointer;
+  list-style: none;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.35rem;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 21px;
+  color: var(--gold-500);
+  font-family: Arial, sans-serif;
+  font-size: 1.7rem;
+}
+
+.faq-list details[open] summary::after {
+  content: "−";
+}
+
+.faq-list details p {
+  margin: -4px 40px 22px 0;
+  color: var(--muted);
+}
+
+.contact-details a {
+  width: fit-content;
+}
+
+.image-credits {
+  padding: 18px 0 0;
+  border-top: 1px solid rgba(255,255,255,.06);
+  color: rgba(255,255,255,.28);
+  font-size: .68rem;
+}
+
+.image-credits a {
+  text-decoration: underline;
+}
+
+.floating-whatsapp {
+  position: fixed;
+  z-index: 1200;
+  right: 22px;
+  bottom: 22px;
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  min-height: 54px;
+  padding: 0 18px 0 14px;
+  border-radius: 999px;
+  background: #25d366;
+  color: #03180b;
+  box-shadow: 0 14px 36px rgba(0,0,0,.24);
+  font-weight: 900;
+  transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.floating-whatsapp:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 18px 42px rgba(0,0,0,.30);
+}
+
+.floating-whatsapp svg {
+  width: 28px;
+  height: 28px;
+  fill: currentColor;
+}
+
+@media (max-width: 900px) {
+  .destination-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: none;
+  }
+
+  .destination-card-wide {
+    grid-row: auto;
+  }
+
+  .destination-card {
+    min-height: 390px;
+  }
+
+  .founder-grid,
+  .partner-grid,
+  .faq-grid {
+    grid-template-columns: 1fr;
+    gap: 44px;
+  }
+
+  .founder-media {
+    max-width: 520px;
+  }
+}
+
+@media (max-width: 660px) {
+  .founder-principles,
+  .partner-categories {
+    grid-template-columns: 1fr;
+  }
+
+  .destination-card {
+    min-height: 340px;
+  }
+
+  .destination-overlay {
+    inset: auto 20px 20px;
+  }
+
+  .floating-whatsapp {
+    right: 14px;
+    bottom: 14px;
+    width: 54px;
+    padding: 0;
+    justify-content: center;
+  }
+
+  .floating-whatsapp span {
+    display: none;
+  }
+}
