@@ -57,3 +57,6 @@ Depois do upload, elimine apenas ficheiros antigos que não constem da lista aci
 ## Nota legal
 
 Os textos de privacidade, termos e enquadramento profissional são uma base inicial. Devem ser revistos por um advogado antes do início da atividade comercial.
+
+
+Atualização: hero image reduzida, fotografia mais compacta e elegante no topo da homepage.
